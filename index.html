@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volatility of Everyday Life | Final Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-follower"></div>
+    <div class="noise-overlay"></div>
+    
+    <nav class="nav">
+        <div class="nav-logo">JI-IN KANG</div>
+        <div class="nav-links">
+            <a href="#concept">Research Question</a>
+            <a href="#exploration">Project Description</a>
+            <a href="#process">Methods</a>
+            <a href="#outcome">Demo</a>
+        </div>
+        <div class="nav-year"> Columbia GSAPP 2025</div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-tag">FINAL PROJECT REVIEW</div>
+            <h1 class="hero-title">
+                <span class="title-line" data-text="VOLATILITY">VOLATILITY</span>
+                <span class="title-line title-of">OF</span>
+                <span class="title-line" data-text="EVERYDAY">EVERYDAY</span>
+                <span class="title-line" data-text="LIFE">LIFE</span>
+            </h1>
+            <div class="hero-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Type</span>
+                    <span class="meta-value">Final Review</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section class="concept" id="concept">
+        <!-- Animated price graph background -->
+        <div class="section-visual">
+            <svg class="volatility-graph" viewBox="0 0 800 200" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="graphGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ff4d00;stop-opacity:0.3"/>
+                        <stop offset="100%" style="stop-color:#ff4d00;stop-opacity:0"/>
+                    </linearGradient>
+                </defs>
+                <path class="graph-fill" d="M0,150 Q100,120 200,140 T400,100 T600,130 T800,90 L800,200 L0,200 Z" fill="url(#graphGradient)"/>
+                <path class="graph-line" d="M0,150 Q100,120 200,140 T400,100 T600,130 T800,90" stroke="#ff4d00" stroke-width="2" fill="none"/>
+                <circle class="graph-dot" cx="200" cy="140" r="4" fill="#ff4d00"/>
+                <circle class="graph-dot" cx="400" cy="100" r="4" fill="#ff4d00"/>
+                <circle class="graph-dot" cx="600" cy="130" r="4" fill="#ff4d00"/>
+            </svg>
+        </div>
+        
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">Research Question</h2>
+        </div>
+        <div class="concept-content">
+            <div class="concept-text">
+                <p class="concept-lead">
+                    "How can real-time visual tools be designed to measure and communicate price differences in daily 
+                    consumer goods between cities, and how do individuals emotionally respond to these differences when 
+                    presented dynamically?"
+                </p>
+                <p class="concept-body">
+                    Through a comparison between Tokyo and New York City, this project investigates how people react 
+                    to the price changes of the same item. I think when real-time visual tools reveal price differences 
+                    between Tokyo and New York City, individuals will display stronger emotional reactions to goods with 
+                    higher perceived price elasticity—everyday essentials whose prices are expected to remain stable. This 
+                    suggests that emotional response patterns can function as a behavioral measure of elasticity, revealing 
+                    how sensitive people feel to unexpected price changes.
+                </p>
+                
+                <!-- City comparison visual -->
+                <div class="city-comparison">
+                    <div class="city-block">
+                        <span class="currency">¥</span>
+                        <span class="city-name">TOKYO</span>
+                    </div>
+                    <div class="comparison-arrow">
+                        <svg viewBox="0 0 60 24" fill="none">
+                            <path d="M0 12H55M55 12L45 2M55 12L45 22" stroke="#ff4d00" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="city-block">
+                        <span class="currency">$</span>
+                        <span class="city-name">NEW YORK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="concept-gallery">
+                <img src="assets/1.jpeg" alt="Volatility of Everyday Life">
+                <img src="assets/11.jpeg" alt="Volatility of Everyday Life">
+                <img src="assets/111.jpeg" alt="Volatility of Everyday Life">
+            </div>
+        </div>
+    </section>
+
+    <section class="exploration" id="exploration">
+        <!-- Animated background bars -->
+        <div class="exploration-bars">
+            <div class="bar" style="--height: 60%; --delay: 0s;"></div>
+            <div class="bar" style="--height: 80%; --delay: 0.1s;"></div>
+            <div class="bar" style="--height: 45%; --delay: 0.2s;"></div>
+            <div class="bar" style="--height: 90%; --delay: 0.3s;"></div>
+            <div class="bar" style="--height: 55%; --delay: 0.4s;"></div>
+            <div class="bar" style="--height: 75%; --delay: 0.5s;"></div>
+            <div class="bar" style="--height: 40%; --delay: 0.6s;"></div>
+            <div class="bar" style="--height: 85%; --delay: 0.7s;"></div>
+            <div class="bar" style="--height: 70%; --delay: 0.8s;"></div>
+            <div class="bar" style="--height: 50%; --delay: 0.9s;"></div>
+        </div>
+        
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title">Project Description</h2>
+        </div>
+        
+        <div class="project-intro">
+            <p>This project combines real-time price visualization with facial-expression analytics to investigate how people emotionally respond to price differences between Tokyo and New York.</p>
+        </div>
+        
+        <div class="volatility-types">
+            <div class="volatility-card">
+                <div class="volatility-label">01</div>
+                <h3 class="volatility-title">Economic Volatility</h3>
+                <p class="volatility-text">The changing cost of identical items across cities, shown through interactive simulations and cost-of-living calculators.</p>
+            </div>
+            <div class="volatility-card">
+                <div class="volatility-label">02</div>
+                <h3 class="volatility-title">Human Volatility</h3>
+                <p class="volatility-text">The rate of change in facial expression when users encounter unexpected price differences, measured through real-time face-tracking.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="method-slide" id="process">
+        <div class="section-header">
+            <span class="section-number">03-A</span>
+            <h2 class="section-title">Computational Method</h2>
+        </div>
+        <div class="method-slide-layout">
+            <div class="method-slide-content">
+                <p class="method-slide-text">My project uses browser-based computer vision, dynamic data rendering, and interactive simulation to analyze how users emotionally respond to cross-city price differences. Real-time facial-expression tracking quantifies volatility as a rate of change in users' reactions, turning emotional responses into measurable data.</p>
+                <p class="method-slide-text">Simultaneously, a scroll-driven price engine and cumulative budget calculator visualize how daily expenses accumulate in Tokyo and New York. These computational methods enable an experiential analysis: they reveal not only the numerical gaps between cities but also how people physically and intuitively process those gaps.</p>
+                <p class="method-slide-text">The workflow transforms static economic data into an interactive, human-centered interpretation of affordability.</p>
+            </div>
+            <div class="method-slide-image">
+                <img src="assets/webcam.png" alt="Webcam facial tracking">
+            </div>
+        </div>
+    </section>
+
+    <section class="method-slide">
+        <div class="section-header">
+            <span class="section-number">03-B</span>
+            <h2 class="section-title">Design Method</h2>
+        </div>
+        <div class="method-slide-layout">
+            <div class="method-slide-content">
+                <p class="method-slide-text">My design methods are primarily personal, experimental, analytic, and narrative, 
+                    using interaction to expose how economic information shapes emotional experience. By pairing real-time price 
+                    visualization with facial-expression tracking, the project creates a participatory environment.</p>
+                <p class="method-slide-text">By centering my project around cities I live in, this project becomes personal.</p>
+            </div>
+            <div class="method-slide-images">
+                <img src="assets/menu.png" alt="Menu design">
+                <img src="assets/menu1.png" alt="Menu design">
+            </div>
+        </div>
+    </section>
+
+    <section class="method-slide">
+        <div class="section-header">
+            <span class="section-number">03-C</span>
+            <h2 class="section-title">Precedent</h2>
+        </div>
+        <div class="method-slide-layout">
+            <div class="method-slide-content">
+                <h3 class="method-slide-title">Big Mac Index</h3>
+                <p class="method-slide-text">The Economist's Big Mac Index is a key precedent for my project because it uses a single, everyday commodity to reveal global price disparities through a playful yet rigorous economic lens.</p>
+                <p class="method-slide-text">Its PPP calculator demonstrates how a familiar good can serve as a microeconomic indicator of affordability across cities. My project extends this idea by shifting from a static comparison tool to an interactive, real-time emotional and computational experience.</p>
+            </div>
+            <div class="method-slide-images grid-3">
+                <img src="assets/bigmac.jpg" alt="Big Mac Index">
+                <img src="assets/bigmac0.jpg" alt="Big Mac Index" class="no-crop">
+                <img src="assets/bigmac1.jpg" alt="Big Mac Index">
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-section" id="outcome">
+        <div class="demo-header">
+            <span class="section-number">04</span>
+            <h2 class="section-title">DEMO</h2>
+        </div>
+        <div class="demo-video-container">
+            <video autoplay loop muted playsinline class="demo-video" id="demoVideo">
+                <source src="assets/proposal_demo.mov" type="video/mp4">
+            </video>
+            <div class="video-controls">
+                <button class="play-pause-btn" id="playPauseBtn">
+                    <span class="pause-icon">❚❚</span>
+                    <span class="play-icon" style="display:none;">▶</span>
+                </button>
+            </div>
+            <a href="https://jkdesu.github.io/cdp_proposal/" target="_blank" class="demo-launch-btn">
+                <span>Launch City Simulator</span>
+                <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section class="plan-section" id="plan">
+        <div class="section-header">
+            <span class="section-number">05</span>
+            <h2 class="section-title">My Final Project Plan</h2>
+        </div>
+        <div class="plan-content">
+            <div class="plan-video">
+                <video autoplay loop muted playsinline id="planVideo">
+                    <source src="assets/spatialux.mov" type="video/mp4">
+                </video>
+                <button class="play-pause-btn plan-play-btn" id="planPlayPauseBtn">
+                    <span class="pause-icon">❚❚</span>
+                    <span class="play-icon" style="display:none;">▶</span>
+                </button>
+            </div>
+            <div class="plan-text">
+                <p>I had a chance to develop an interactive project that lets users have a spatial experience during Spatial UX class at GSAPP. <span class="text-muted">(group project)</span></p>
+                <p>For my final project, I aim to create a spatial experience where people can scroll through items spatially where all the images are portrayed on the wall. In that case, I could make a more personal and spatial experience.</p>
+                <p class="plan-highlight">I want to have separate rooms for Tokyo and NYC so that people actually feel like they are experiencing being in two different cities.</p>
+                <p>I also will implement more variety of options for living expenses as well as jobs.</p>
+                <p>I want this project to expand more spatially because I think having a physical experience will have more impact on the rate of change in facial expression rather than looking at items on the screen.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-title">VOLATILITY OF EVERYDAY LIFE</div>
+            <div class="footer-credits">
+                <p>Final Project Review — 2025</p>
+                <p>Ji-In</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
