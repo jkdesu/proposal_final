@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation | Volatility of Everyday Life</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="doc-style.css">
+</head>
+<body>
+    <nav class="doc-nav">
+        <div class="nav-header">
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Presentation</span>
+            </a>
+            <div class="nav-title">Documentation</div>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#hypothesis" class="nav-link active">Hypothesis</a></li>
+            <li><a href="#description" class="nav-link">Project Description</a></li>
+            <li><a href="#computational" class="nav-link">Computational Methods</a></li>
+            <li><a href="#design" class="nav-link">Design Methods</a></li>
+            <li><a href="#precedents" class="nav-link">Precedents</a></li>
+            <li><a href="#proof" class="nav-link">Proof of Concept</a></li>
+            <li><a href="#audience" class="nav-link">Audience</a></li>
+            <li><a href="#data" class="nav-link">Data</a></li>
+            <li><a href="#materials" class="nav-link">Materials & Sensors</a></li>
+            <li><a href="#bibliography" class="nav-link">Bibliography</a></li>
+            <li><a href="#sources" class="nav-link">Data Sources</a></li>
+        </ul>
+        <div class="nav-footer">
+            <p>Ji-In Kang</p>
+            <p>Columbia GSAPP 2025</p>
+        </div>
+    </nav>
+
+    <main class="doc-content">
+        <header class="doc-header">
+            <div class="header-tag">FINAL PROJECT DOCUMENTATION</div>
+            <h1 class="header-title">Volatility of Everyday Life</h1>
+            <p class="header-subtitle">Measuring Emotional Response to Cross-City Price Differences</p>
+            <div class="header-meta">
+                <span class="meta-item">Ji-In Kang</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Columbia GSAPP</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">December 2025</span>
+            </div>
+        </header>
+
+        <section id="hypothesis" class="doc-section">
+            <div class="section-marker">01</div>
+            <h2 class="section-title">Research Question & Hypothesis</h2>
+            <div class="section-content">
+                <blockquote class="research-question">
+                    "How can real-time visual tools be designed to measure and communicate price differences in daily consumer goods between cities, and how do individuals emotionally respond to these differences when presented dynamically?"
+                </blockquote>
+                
+                <p class="body-text">Through a comparison between Tokyo and New York City, this project investigates how people react to the price changes of the same item.</p>
+                
+                <div class="hypothesis-box">
+                    <h3>Hypothesis</h3>
+                    <p>When real-time visual tools reveal price differences between Tokyo and New York City, individuals will display stronger emotional reactions to goods with higher perceived price elasticity—everyday essentials whose prices are expected to remain stable. This suggests that emotional response patterns can function as a behavioral measure of elasticity, revealing how sensitive people feel to unexpected price changes.</p>
+                </div>
+
+                <div class="city-visual">
+                    <div class="city-card">
+                        <span class="currency-symbol">¥</span>
+                        <span class="city-name">TOKYO</span>
+                    </div>
+                    <div class="comparison-connector">
+                        <svg viewBox="0 0 100 24" fill="none">
+                            <path d="M0 12H90M90 12L80 4M90 12L80 20" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="city-card">
+                        <span class="currency-symbol">$</span>
+                        <span class="city-name">NEW YORK</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="description" class="doc-section">
+            <div class="section-marker">02</div>
+            <h2 class="section-title">Project Description</h2>
+            <div class="section-content">
+                <p class="body-text lead">My project investigates how people react to price differences between Tokyo and New York by combining real-time visualization with facial-expression analytics.</p>
+                
+                <p class="body-text">After spending most of my adulthood in both cities, I became curious about how living expenses shape people's perceptions—and how individuals emotionally respond when confronted with drastically different prices for the same everyday goods.</p>
+                
+                <p class="body-text">To explore this, the project visualizes price volatility in two ways:</p>
+
+                <div class="volatility-cards">
+                    <div class="vol-card">
+                        <div class="vol-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M8 38V10M16 38V18M24 38V14M32 38V22M40 38V6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Economic Volatility</h3>
+                        <p>The changing cost of identical consumer items across cities, shown through interactive simulations and cumulative cost-of-living calculators.</p>
+                    </div>
+                    <div class="vol-card">
+                        <div class="vol-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="18" r="10" stroke="currentColor" stroke-width="3"/>
+                                <path d="M18 17C18 17 20 20 24 20C28 20 30 17 30 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="20" cy="15" r="1.5" fill="currentColor"/>
+                                <circle cx="28" cy="15" r="1.5" fill="currentColor"/>
+                                <path d="M12 32C12 32 16 28 24 28C32 28 36 32 36 32V42H12V32Z" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <h3>Human Volatility</h3>
+                        <p>The rate of change in a user's facial expression when they encounter unexpected or extreme price differences, measured through real-time face-tracking.</p>
+                    </div>
+                </div>
+
+                <p class="body-text">By integrating cost-of-living simulation with emotional data, the project examines not only how much prices vary between Tokyo and NYC, but also how people physically react to these economic contrasts. Ultimately, it aims to understand how individuals process affordability differences—not just rationally, but emotionally.</p>
+
+                <div class="image-gallery">
+                    <img src="assets/1.jpeg" alt="Project visualization">
+                    <img src="assets/11.jpeg" alt="Interface design">
+                    <img src="assets/111.jpeg" alt="Data visualization">
+                </div>
+            </div>
+        </section>
+
+        <section id="computational" class="doc-section">
+            <div class="section-marker">03</div>
+            <h2 class="section-title">Computational Methods</h2>
+            <div class="section-content">
+                <div class="method-layout">
+                    <div class="method-text">
+                        <p class="body-text">My project uses <strong>browser-based computer vision</strong>, <strong>dynamic data rendering</strong>, and <strong>interactive simulation</strong> to analyze how users emotionally respond to cross-city price differences.</p>
+                        
+                        <p class="body-text">Real-time facial-expression tracking quantifies volatility as a rate of change in users' reactions, turning emotional responses into measurable data. Simultaneously, a scroll-driven price engine and cumulative budget calculator visualize how daily expenses accumulate in Tokyo and New York.</p>
+                        
+                        <p class="body-text">These computational methods enable an experiential analysis: they reveal not only the numerical gaps between cities but also how people physically and intuitively process those gaps. The workflow transforms static economic data into an interactive, human-centered interpretation of affordability.</p>
+                    </div>
+                    <div class="method-visual">
+                        <img src="assets/webcam.png" alt="Facial tracking system">
+                    </div>
+                </div>
+
+                <div class="tech-stack">
+                    <h3>Technologies & Frameworks</h3>
+                    <div class="tech-items">
+                        <span class="tech-tag">Face-API.js</span>
+                        <span class="tech-tag">TensorFlow.js</span>
+                        <span class="tech-tag">Three.js</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">Web APIs</span>
+                        <span class="tech-tag">Real-time Data Rendering</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="design" class="doc-section">
+            <div class="section-marker">04</div>
+            <h2 class="section-title">Design Methods</h2>
+            <div class="section-content">
+                <p class="body-text lead">My design methods are primarily <em>experimental</em>, <em>analytic</em>, and <em>narrative</em>, using interaction to expose how economic information shapes emotional experience.</p>
+                
+                <p class="body-text">By pairing real-time price visualization with facial-expression tracking, the project creates a participatory environment where users become active subjects in the analysis rather than passive observers.</p>
+                
+                <p class="body-text">This approach makes it possible to tell a human-centered economic story, revealing how people intuitively react to affordability gaps between Tokyo and New York.</p>
+                
+                <div class="design-aspects">
+                    <div class="aspect-card">
+                        <h4>Experimental</h4>
+                        <p>Creating novel interactions between economic data and emotional response</p>
+                    </div>
+                    <div class="aspect-card">
+                        <h4>Analytic</h4>
+                        <p>Quantifying emotional reactions as measurable data points</p>
+                    </div>
+                    <div class="aspect-card">
+                        <h4>Narrative</h4>
+                        <p>Telling a human-centered story through interactive visualization</p>
+                    </div>
+                    <div class="aspect-card">
+                        <h4>Critical</h4>
+                        <p>Challenging the assumption that economic data is objective or detached</p>
+                    </div>
+                </div>
+                
+                <p class="body-text">The design also has a critical dimension, challenging the assumption that economic data is objective or detached by showing that perceptions of cost are deeply embodied and affective. Through simulation and interaction, the work highlights how data, emotion, and lived experience intersect in everyday urban life.</p>
+
+                <div class="image-row">
+                    <img src="assets/menu.png" alt="Menu interface design">
+                    <img src="assets/menu1.png" alt="Menu interface variation">
+                </div>
+            </div>
+        </section>
+
+        <section id="precedents" class="doc-section">
+            <div class="section-marker">05</div>
+            <h2 class="section-title">Precedents</h2>
+            <div class="section-content">
+                <div class="precedent-card featured">
+                    <div class="precedent-images">
+                        <img src="assets/bigmac.jpg" alt="Big Mac Index visualization">
+                        <img src="assets/bigmac0.jpg" alt="Big Mac Index chart">
+                        <img src="assets/bigmac1.jpg" alt="PPP Calculator">
+                    </div>
+                    <div class="precedent-text">
+                        <h3>The Economist — Big Mac Index & PPP Calculator</h3>
+                        <p>The Economist's Big Mac Index is a key precedent for my project because it uses a single, everyday commodity to reveal global price disparities through a playful yet rigorous economic lens.</p>
+                        <p>Its PPP calculator demonstrates how a familiar good can serve as a microeconomic indicator of affordability across cities. My project extends this idea by shifting from a static comparison tool to an interactive, real-time emotional and computational experience.</p>
+                        <p class="highlight">Rather than only displaying price differences, my project measures how people feel and react to them, critiquing the assumption that cost-of-living data is purely rational and proposing an alternative: that affordability is both economic and emotional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proof" class="doc-section">
+            <div class="section-marker">06</div>
+            <h2 class="section-title">Proof of Concept</h2>
+            <div class="section-content">
+                <p class="body-text lead">The following prototypes demonstrate the core functionality of the project—integrating price visualization with emotional response tracking.</p>
+
+                <div class="demo-container">
+                    <video autoplay loop muted playsinline class="demo-video" id="proofVideo">
+                        <source src="assets/proposal_demo.mov" type="video/mp4">
+                    </video>
+                    <div class="demo-controls">
+                        <button class="demo-play-btn" id="proofPlayBtn">
+                            <span class="pause-icon">❚❚</span>
+                            <span class="play-icon" style="display:none;">▶</span>
+                        </button>
+                    </div>
+                </div>
+
+                <a href="https://jkdesu.github.io/cdp_proposal/" target="_blank" class="launch-btn">
+                    <span>Launch Interactive Demo</span>
+                    <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+
+                <h3 class="subsection-title">Future Development: Spatial Experience</h3>
+                
+                <div class="future-demo">
+                    <video autoplay loop muted playsinline class="demo-video" id="spatialVideo">
+                        <source src="assets/spatialux.mov" type="video/mp4">
+                    </video>
+                    <div class="demo-controls">
+                        <button class="demo-play-btn" id="spatialPlayBtn">
+                            <span class="pause-icon">❚❚</span>
+                            <span class="play-icon" style="display:none;">▶</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <p class="body-text">For my final project, I aim to create a spatial experience where people can scroll through items spatially where all the images are portrayed on the wall. I want to have separate rooms for Tokyo and NYC so that people actually feel like they are experiencing being in two different cities.</p>
+                
+                <p class="body-text">I want this project to expand more spatially because I think having a physical experience will have more impact on the rate of change in facial expression rather than looking at items on the screen.</p>
+            </div>
+        </section>
+
+        <section id="audience" class="doc-section">
+            <div class="section-marker">07</div>
+            <h2 class="section-title">Audience</h2>
+            <div class="section-content">
+                <div class="audience-primary">
+                    <h3>Primary Audience</h3>
+                    <p class="body-text">My primary audience consists of <strong>individuals who have lived in or traveled between major global cities</strong> because they carry personal context for interpreting price differences. For this group, the project resonates as both economic analysis and lived experience.</p>
+                </div>
+
+                <div class="audience-consideration">
+                    <h3>Accessibility Considerations</h3>
+                    <p class="body-text">The project may be less accessible to audiences unfamiliar with cost-of-living issues, median income disparities, or facial-tracking interfaces.</p>
+                    
+                    <div class="consideration-cards">
+                        <div class="consideration">
+                            <h4>Who might be excluded?</h4>
+                            <ul>
+                                <li>Those unfamiliar with international cost-of-living comparisons</li>
+                                <li>Users uncomfortable with webcam/facial tracking</li>
+                                <li>People without experience in either Tokyo or NYC</li>
+                            </ul>
+                        </div>
+                        <div class="consideration">
+                            <h4>Alternative Designs</h4>
+                            <ul>
+                                <li>Educational onboarding explaining wage/price context</li>
+                                <li>Non-camera-based emotional input options</li>
+                                <li>City selection beyond Tokyo/NYC for broader relevance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="data" class="doc-section">
+            <div class="section-marker">08</div>
+            <h2 class="section-title">Data</h2>
+            <div class="section-content">
+                <div class="data-categories">
+                    <div class="data-card">
+                        <div class="data-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M24 4L4 14V34L24 44L44 34V14L24 4Z" stroke="currentColor" stroke-width="3"/>
+                                <path d="M4 14L24 24M24 24L44 14M24 24V44" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Scraped Price Data</h3>
+                        <p>Official price information from major commercial businesses common to both cities, including coffee chains, convenience stores, fast food, and grocery staples. All businesses selected exist at a multinational level.</p>
+                    </div>
+                    
+                    <div class="data-card">
+                        <div class="data-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <rect x="6" y="6" width="36" height="36" rx="4" stroke="currentColor" stroke-width="3"/>
+                                <path d="M14 28L20 22L26 28L34 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Wage and Income Data</h3>
+                        <p>Average wages in each city reported by NYC report and Tokyo. Includes disposable income estimations (wage → taxes → essential payments).</p>
+                    </div>
+                    
+                    <div class="data-card">
+                        <div class="data-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M8 40V18L24 8L40 18V40H8Z" stroke="currentColor" stroke-width="3"/>
+                                <rect x="18" y="26" width="12" height="14" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Essential Expenses</h3>
+                        <p>Median rent, utilities, and transportation costs in both cities to calculate baseline living expenses.</p>
+                    </div>
+                </div>
+
+                <div class="data-highlight">
+                    <h3>Big Mac Index as Precedent</h3>
+                    <p>The Big Mac Index is a valuable precedent as it compares the price level of goods between countries. It indicates whether currencies are overvalued or undervalued, reflecting market prices (Transfer Pricing). This project extends this methodology to a broader range of everyday consumer goods.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="materials" class="doc-section">
+            <div class="section-marker">09</div>
+            <h2 class="section-title">Materials & Sensors</h2>
+            <div class="section-content">
+                <p class="body-text lead">The project relies on browser-based sensors and computational algorithms rather than traditional physical sensors.</p>
+
+                <div class="materials-grid">
+                    <div class="material-item">
+                        <h4>Webcam / Camera API</h4>
+                        <p>Browser access to user's webcam for real-time facial expression capture</p>
+                    </div>
+                    <div class="material-item">
+                        <h4>Face-API.js</h4>
+                        <p>JavaScript library for face detection and expression recognition in the browser</p>
+                    </div>
+                    <div class="material-item">
+                        <h4>TensorFlow.js</h4>
+                        <p>Machine learning framework for running neural networks in the browser</p>
+                    </div>
+                    <div class="material-item">
+                        <h4>Expression Analysis Algorithms</h4>
+                        <p>Custom algorithms calculating "volatility" as rate of change in facial landmarks</p>
+                    </div>
+                </div>
+
+                <div class="algorithm-diagram">
+                    <h3>Computational Pipeline</h3>
+                    <div class="pipeline">
+                        <div class="pipeline-step">
+                            <span class="step-num">1</span>
+                            <span class="step-label">Webcam Input</span>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-step">
+                            <span class="step-num">2</span>
+                            <span class="step-label">Face Detection</span>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-step">
+                            <span class="step-num">3</span>
+                            <span class="step-label">Expression Analysis</span>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-step">
+                            <span class="step-num">4</span>
+                            <span class="step-label">Volatility Calculation</span>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-step">
+                            <span class="step-num">5</span>
+                            <span class="step-label">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bibliography" class="doc-section">
+            <div class="section-marker">10</div>
+            <h2 class="section-title">Annotated Bibliography</h2>
+            <div class="section-content">
+                <div class="bib-list">
+                    <div class="bib-entry">
+                        <div class="bib-number">01</div>
+                        <div class="bib-content">
+                            <h4>Tokyo Metropolitan Government. "Statistical Yearbook of Tokyo."</h4>
+                            <p>Offers official statistics on wages, living costs, transportation and household expenditures in Tokyo. This provides the foundational economic data for the Tokyo side of the comparison, ensuring accuracy and reliability in price representations.</p>
+                        </div>
+                    </div>
+
+                    <div class="bib-entry">
+                        <div class="bib-number">02</div>
+                        <div class="bib-content">
+                            <h4>The Economist. "The Big Mac Index."</h4>
+                            <p>This index compares purchasing power across countries using the price of a single, standardized commodity. It provides the conceptual foundation for treating everyday consumer goods as microeconomic indicators, which my project extends through interactive visualization and emotional analysis.</p>
+                        </div>
+                    </div>
+
+                    <div class="bib-entry">
+                        <div class="bib-number">03</div>
+                        <div class="bib-content">
+                            <h4>Edward R. Tufte. <em>The Visual Display of Quantitative Information.</em></h4>
+                            <p>Tufte's principles of clarity, density, and visual reasoning provide a theoretical foundation for design choices. His work helps justify my decision to use dynamic, interactive graphics to communicate volatility and price differences effectively.</p>
+                        </div>
+                    </div>
+
+                    <div class="bib-entry">
+                        <div class="bib-number">04</div>
+                        <div class="bib-content">
+                            <h4>Daniel Kahneman. <em>Thinking, Fast and Slow.</em></h4>
+                            <p>Kahneman's work on cognitive biases and intuitive reactions informs my project's focus on emotional response to economic information. It supports the idea that people process price differences affectively, not just rationally.</p>
+                        </div>
+                    </div>
+
+                    <div class="bib-entry">
+                        <div class="bib-number">05</div>
+                        <div class="bib-content">
+                            <h4>Rosalind W. Picard. <em>Affective Computing.</em></h4>
+                            <p>Picard introduces the theoretical basis for measuring emotion through computational systems. This text frames the use of facial-expression tracking as part of the methodology for analyzing "emotional volatility" as a rate of change in user reactions.</p>
+                        </div>
+                    </div>
+
+                    <div class="bib-entry">
+                        <div class="bib-number">06</div>
+                        <div class="bib-content">
+                            <h4>Paul Ekman. <em>Emotions Revealed: Recognizing Faces and Feelings.</em></h4>
+                            <p>Ekman's foundational research on facial expressions and universal emotions provides the scientific basis for facial-expression analysis used in this project. His work on micro-expressions informs how subtle emotional changes can be detected and measured.</p>
+                        </div>
+                    </div>
+
+                    <div class="bib-entry">
+                        <div class="bib-number">07</div>
+                        <div class="bib-content">
+                            <h4>Richard Thaler & Cass Sunstein. <em>Nudge: Improving Decisions About Health, Wealth, and Happiness.</em></h4>
+                            <p>This work on behavioral economics and choice architecture informs how price information can be designed to influence perception. The project applies these principles to understand how presentation of cost data affects emotional response.</p>
+                        </div>
+                    </div>
+
+                    <div class="bib-entry">
+                        <div class="bib-number">08</div>
+                        <div class="bib-content">
+                            <h4>Dan Ariely. <em>Predictably Irrational: The Hidden Forces That Shape Our Decisions.</em></h4>
+                            <p>Ariely's research on irrational economic behavior provides context for understanding why people react emotionally to price differences. His work on the psychology of pricing directly relates to the project's investigation of emotional volatility in response to cost comparisons.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sources" class="doc-section">
+            <div class="section-marker">11</div>
+            <h2 class="section-title">Data Sources</h2>
+            <div class="section-content">
+                <div class="sources-list">
+                    <div class="source-entry">
+                        <h4>Tokyo Metropolitan Government Statistics</h4>
+                        <p class="source-url">toukei.metro.tokyo.lg.jp</p>
+                        <p>Official government statistics providing accurate wage, rent, and cost-of-living data for Tokyo. Published annually with transparent methodology and data collection practices by the Tokyo Metropolitan Government.</p>
+                    </div>
+
+                    <div class="source-entry">
+                        <h4>NYC Open Data / Bureau of Labor Statistics</h4>
+                        <p class="source-url">data.cityofnewyork.us / bls.gov</p>
+                        <p>Official U.S. government data on wages, consumer prices, and living costs in the New York metropolitan area. Data is collected through systematic surveys and published with clear provenance.</p>
+                    </div>
+
+                    <div class="source-entry">
+                        <h4>The Economist Big Mac Index</h4>
+                        <p class="source-url">economist.com/big-mac-index</p>
+                        <p>A semi-annual publication comparing Big Mac prices globally. While playful, it represents a rigorous attempt to compare purchasing power parity across countries using a standardized commodity.</p>
+                    </div>
+
+                    <div class="source-entry">
+                        <h4>Corporate Price Data (Scraped)</h4>
+                        <p class="source-url">Various multinational retailers</p>
+                        <p>Prices collected from official websites and menus of multinational businesses operating in both Tokyo and NYC (coffee chains, convenience stores, fast food). Data reflects publicly displayed prices as of 2025.</p>
+                    </div>
+
+                    <div class="source-entry">
+                        <h4>Numbeo Cost of Living Database</h4>
+                        <p class="source-url">numbeo.com</p>
+                        <p>Crowdsourced cost-of-living data used for cross-validation. While user-contributed, it provides broad coverage and is useful for identifying trends and verifying official statistics.</p>
+                    </div>
+                </div>
+
+                <div class="data-politics">
+                    <h3>Notes on Data Politics</h3>
+                    <p class="body-text">All data sources reflect specific institutional perspectives and collection methodologies. Government statistics may not capture informal economies or recent price fluctuations. Crowdsourced data may over-represent certain demographics. The project acknowledges these limitations and presents comparisons as illustrative rather than definitive measures of lived experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="doc-footer">
+            <div class="footer-content">
+                <h2>Volatility of Everyday Life</h2>
+                <p>Final Project Documentation — Columbia GSAPP 2025</p>
+                <p>Ji-In Kang</p>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Navigation active state
+        const sections = document.querySelectorAll('.doc-section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function updateActiveNav() {
+            const scrollY = window.scrollY;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNav);
+
+        // Smooth scroll for nav links
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Video controls
+        function setupVideoControl(videoId, btnId) {
+            const video = document.getElementById(videoId);
+            const btn = document.getElementById(btnId);
+            
+            if (video && btn) {
+                const pauseIcon = btn.querySelector('.pause-icon');
+                const playIcon = btn.querySelector('.play-icon');
+                
+                function toggle() {
+                    if (video.paused) {
+                        video.play();
+                        pauseIcon.style.display = 'inline';
+                        playIcon.style.display = 'none';
+                    } else {
+                        video.pause();
+                        pauseIcon.style.display = 'none';
+                        playIcon.style.display = 'inline';
+                    }
+                }
+                
+                btn.addEventListener('click', toggle);
+                video.addEventListener('click', toggle);
+            }
+        }
+
+        setupVideoControl('proofVideo', 'proofPlayBtn');
+        setupVideoControl('spatialVideo', 'spatialPlayBtn');
+
+        // Reveal animations
+        const revealElements = document.querySelectorAll('.doc-section');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
+
